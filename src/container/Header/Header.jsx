@@ -15,7 +15,7 @@ const Header = () => (
       <button className="custom__button" type='button'>Explore Menu</button>
     </div>
     <div className="app__wrapper_img">
-      <img src= {images.welcome} alt="welcome image" />
+      <img src= {images.welcome} alt="welcome" />
     </div>
   </div>
 );
