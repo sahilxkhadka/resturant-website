@@ -1,5 +1,5 @@
 import React from 'react';
-import {images, data} from "../../constants"
+import {images} from "../../constants"
 import { SubHeading} from '../../components';
 
 const FindUs = () => (

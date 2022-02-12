@@ -78,5 +78,6 @@ const awards = [
     subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
   },
 ];
+const data = {awards, wines, cocktails}
 
-export default { wines, cocktails, awards };
+export default data;
