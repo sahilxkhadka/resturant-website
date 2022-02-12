@@ -17,6 +17,7 @@ import award03 from '../assets/award03.png';
 import award05 from '../assets/award05.png';
 import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
+import aboutuscover from "../assets/aboutuscover.png"
 const images =  {
   chef,
   gallery01,
@@ -36,6 +37,7 @@ const images =  {
   award05,
   sign,
   quote,
+  aboutuscover
 };
 
 export default images;
