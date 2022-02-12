@@ -1,0 +1,109 @@
+.app__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-black);
+    padding: 1rem 2rem;
+}
+
+.app__navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app__navbar-logo img {
+    max-width: 100px;
+}
+.app__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.app__navbar-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+.app__navbar-links li:hover {
+    color: var(--color-grey);
+}
+.app__navbar-login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.app__navbar-login a {
+    margin: 0 1rem;
+    transition: 0.5s ease;
+}
+.app__navbar-login a:hover {
+    border-bottom: 1px solid var(--color-golden);
+}
+.app__navbar-login div {
+    width: 1px;
+    height: 20px;
+    background-color: var(--color-grey);
+}
+.app__navbar-smallscreen {
+    display: none;
+}
+.app__navbar-smallscreen_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-black);
+    flex-direction: column;
+    z-index: 5;
+}
+.app__navbar-smallscreen_links {
+    list-style: none;
+}
+.app__navbar-smallscreen_links li {
+    color: var(--color-golden);
+    margin: 2.5rem;
+    font-size: 2rem;
+    font-family: var(--font-base);
+    cursor: pointer;
+}
+.app__navbar-smallscreen_links li:hover {
+    color: var(--color-white);
+}
+.app__navbar-smallscreen_overlay .overlay__close {
+    font-size: 27px;
+    color: var(--color-golden);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 2000px) {
+    .app__navbar-logo img {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__navbar-links {
+        display: none;
+    }
+    .app__navbar-smallscreen {
+        display: flex;
+    }
+}
+@media screen and (max-width: 650px) {
+    .app__navbar {
+        padding: 1rem;
+    }
+    .app__navbar-login {
+        display: none;
+    }
+    .app__navbar-logo img {
+        width: 110px;
+    }
+}

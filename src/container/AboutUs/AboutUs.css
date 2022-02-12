@@ -1,0 +1,77 @@
+.app__aboutus {
+    position: relative;
+    scroll-behavior: smooth;
+}
+.app__aboutus-overlay {
+    position: absolute;
+    top: 0;
+}
+.app__aboutus-overlay {
+    margin-left: auto;
+    margin-right: auto;
+}
+.app__aboutus-overlay img {
+    width: 391px;
+    height: 415px;
+    z-index: 0;
+    opacity: 0.8;
+    z-index: 1;
+}
+.app__aboutus-content {
+    width: 100%;
+    z-index: 2;
+    justify-content: space-between;
+}
+.app__aboutus-content_about {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 3rem;
+}
+.app__aboutus-content_khukuri {
+    margin: 2rem 4rem;
+}
+.app__aboutus-content_khukuri img {
+    height: 600px;
+    opacity: 0.9;
+    filter: brightness(90%);
+}
+.app__aboutus-content_history {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+}
+.app__aboutus-content p{
+    margin: 2rem 0;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+@media screen and (max-width: 2000px) {
+    .app__aboutus-content p{
+        margin: 4rem 0;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .app__aboutus-content {
+        flex-direction: column;
+    }
+    .app__aboutus-content_khukuri {
+        margin: 4rem 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__aboutus-overlay img {
+        width: 80%;
+        height: 320px;
+    }
+}
