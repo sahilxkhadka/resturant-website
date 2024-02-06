@@ -1,15 +1,38 @@
+import SubHeading from "../SubHeading/SubHeading";
+import breakfast from "../../assets/breakfast.png";
 import SearchFood from "./SearchFood";
 import "./index.css";
 
 const MenuCategory = () => {
 	return (
 		<>
-			<SearchFood />
-			<div className='menu-list-wrapper'>
-				<h2>Categories</h2>
-				<div className='menu-category-container'>
-					<p>BreakFast</p>
-					<div className='circle-right'></div>
+			<div className='menu-list-wrapper app__bg'>
+				<SearchFood />
+				<h2 className='headtext__cormorant'>Categories</h2>
+				<div className='categories-container'>
+					<div className='menu-category-container'>
+						<SubHeading title={"BreakFast"} />
+						<div className='category-image'>
+							<img src={breakfast} alt='' />
+						</div>
+						<div className='circle-right'></div>
+					</div>
+					<div className='menu-category-container'>
+						<SubHeading title={"BreakFast"} />
+						<div className='circle-right'></div>
+					</div>
+					<div className='menu-category-container'>
+						<SubHeading title={"BreakFast"} />
+						<div className='circle-right'></div>
+					</div>
+					<div className='menu-category-container'>
+						<SubHeading title={"BreakFast"} />
+						<div className='circle-right'></div>
+					</div>
+					<div className='menu-category-container'>
+						<SubHeading title={"BreakFast"} />
+						<div className='circle-right'></div>
+					</div>
 				</div>
 			</div>
 		</>
