@@ -1,22 +1,17 @@
-import React from 'react';
+import React from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
-import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Laurels, SpecialMenu } from './container';
-import { Navbar } from './components';
-import './App.css';
+import "./App.css";
+import Home from "./Home";
+import MenuList from "./MenuList";
 
 const App = () => (
-  <div>
-    <Navbar />
-    <Header />
-    <AboutUs />
-    <SpecialMenu />
-    <Chef />
-    {/* <Intro /> */}
-    <Laurels />
-    <Gallery />
-    <FindUs />
-    <Footer />
-  </div>
+	<Router>
+		<Routes>
+			<Route path='/' element={<Home />} />
+			<Route path='/menu-list' element={<MenuList />} />
+		</Routes>
+	</Router>
 );
 
 export default App;
