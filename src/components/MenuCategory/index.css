@@ -1,7 +1,6 @@
 .menu-list-wrapper {
 	display: flex;
 	flex-direction: column;
-	padding: 1rem;
 }
 .categories-container {
 	display: flex;

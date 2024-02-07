@@ -6,7 +6,7 @@ import "./index.css";
 const MenuCategory = () => {
 	return (
 		<>
-			<div className='menu-list-wrapper app__bg'>
+			<div className='menu-list-wrapper'>
 				<SearchFood />
 				<h2 className='headtext__cormorant'>Categories</h2>
 				<div className='categories-container'>
