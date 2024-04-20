@@ -5,7 +5,7 @@ import Hookah from "./components/Hookah";
 
 const MenuList = () => {
 	return (
-		<div className='app__bg menu-wrapper'>
+		<div className='app__bg menu-wrapper pb-5'>
 			<Navbar />
 			<MenuCategory />
 			<ChefsRecommendations />
