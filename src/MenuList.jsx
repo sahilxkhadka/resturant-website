@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, MenuCategory } from "./components";
 import ChefsRecommendations from "./components/ChefRecommendations";
+import Hookah from "./components/Hookah";
 
 const MenuList = () => {
 	return (
@@ -8,6 +9,7 @@ const MenuList = () => {
 			<Navbar />
 			<MenuCategory />
 			<ChefsRecommendations />
+			<Hookah />
 		</div>
 	);
 };
