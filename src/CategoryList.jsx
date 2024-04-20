@@ -1,11 +1,15 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { MenuItem, SubHeading } from "./components";
-import { data, images } from "./constants";
+import { menuItems } from "./constants/menulits";
 
 const CategoryList = () => {
-	const params = useParams();
-	console.log(params.category);
 	const navigate = useNavigate();
+	const params = useParams();
+	if (!params.category) {
+		navigate("/menu-list");
+	}
+	const currentCategory = params.category ?? "breakfast";
+	const currentItems = menuItems[currentCategory] ?? [];
 	const handleBack = () => {
 		navigate("/menu-list");
 	};
@@ -25,12 +29,12 @@ const CategoryList = () => {
 							{params.category.toUpperCase()}
 						</p>
 						<div className='app__specialMenu-menu_items'>
-							{data.wines.map((wine, index) => (
+							{currentItems.map((item, index) => (
 								<MenuItem
-									key={wine.title + index}
-									title={wine.title}
-									price={wine.price}
-									tags={wine.tags}
+									key={item.title + index}
+									title={item.title}
+									price={item.price}
+									tags={item.tags}
 								/>
 							))}
 						</div>

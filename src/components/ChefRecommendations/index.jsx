@@ -1,13 +1,13 @@
+import { chefsRecommendations } from "../../constants/menulits";
 import FoodItem from "./FoodItem";
 
 const ChefsRecommendations = () => {
 	return (
 		<>
 			<p className='app__specialMenu-menu_heading'>Chef's Recommendations</p>
-			<FoodItem />
-			<FoodItem />
-			<FoodItem />
-			<FoodItem />
+			{chefsRecommendations.map((reecommendedItem) => (
+				<FoodItem key={reecommendedItem.name} foodItemInfo={reecommendedItem} />
+			))}
 		</>
 	);
 };
