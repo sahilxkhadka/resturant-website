@@ -55,7 +55,40 @@ a {
 
 .menu-wrapper {
 	padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.momo_categories_container {
+	display: flex;
+	gap: 12px;
+	flex-wrap: wrap;
+}
+
+.momo_categories_button {
+	min-width: fit-content;
+	border: 1px solid #dcca87;
+	padding: 8px 24px;
+	background-color: transparent;
+	color: #ffffff;
+	font-weight: 600;
+	font-family: var(--font-base);
+	font-size: 18px;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	line-height: 28px;
+	padding: 0.5rem 1.5rem;
+	border-radius: 1px;
+	cursor: pointer;
+}
+
+.momo_categories_button:hover {
+	background-color: var(--color-crimson);
+	color: var(--color-black);
+}
+
+.mrp-message {
+	text-align: center;
 }

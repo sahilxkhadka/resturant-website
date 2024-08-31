@@ -8,7 +8,7 @@
 }
 .app__specialMenu-menu {
 	width: 100%;
-	margin: 2rem 0;
+	margin: 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;

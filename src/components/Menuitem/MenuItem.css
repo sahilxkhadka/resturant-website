@@ -1,28 +1,34 @@
 .app__menuItem {
-    display: flex;
-    flex-direction: column;
-    width: 100%
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 12px;
 }
 .app__menuItem-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
 }
 .app__menuItem-sub {
-    width: 100%;
-    margin-top: 0.2rem;
+	width: 100%;
+	margin-top: 0.2rem;
 }
 .app__menuItem-name {
-    flex: 1;
+	flex: 1;
+	flex-shrink: 0;
+	white-space: nowrap;
 }
 .app__menuItem-dash {
-    width: 90px;
-    height: 1px;
-    background-color: var(--color-golden);
-    margin: 0 1rem;
+	/* width: 90px; */
+	flex: 1;
+	height: 1px;
+	background-color: var(--color-golden);
+	margin: 0 1rem;
 }
 .app__menuItem-price {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	flex-shrink: 0;
 }

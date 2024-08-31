@@ -15,19 +15,19 @@ const Navbar = () => {
 			</div>
 			<ul className='app__navbar-links'>
 				<li className='p__opensans'>
-					<a href='#home'>Home</a>
+					<a href='/#home'>Home</a>
 				</li>
 				<li className='p__opensans'>
-					<a href='#about'>About</a>
+					<a href='/#about'>About</a>
 				</li>
 				<li className='p__opensans'>
-					<a href='#menu'>Menu</a>
+					<a href='/menu-list'>Menu</a>
 				</li>
 				<li className='p__opensans'>
-					<a href='#awards'>Awards</a>
+					<a href='/#awards'>Awards</a>
 				</li>
 				<li className='p__opensans'>
-					<a href='#contact'>Contact</a>
+					<a href='/#contact'>Contact</a>
 				</li>
 			</ul>
 			<div className='app__navbar-login'>
@@ -53,27 +53,27 @@ const Navbar = () => {
 						/>
 						<ul className='app__navbar-smallscreen_links'>
 							<li className='p__opensans'>
-								<a href='#home' onClick={() => setOverlay(false)}>
+								<a href='/#home' onClick={() => setOverlay(false)}>
 									Home
 								</a>
 							</li>
 							<li className='p__opensans'>
-								<a href='#about' onClick={() => setOverlay(false)}>
+								<a href='/#about' onClick={() => setOverlay(false)}>
 									About
 								</a>
 							</li>
 							<li className='p__opensans'>
-								<a href='#menu' onClick={() => setOverlay(false)}>
+								<a href='/menu-list' onClick={() => setOverlay(false)}>
 									Menu
 								</a>
 							</li>
 							<li className='p__opensans'>
-								<a href='#awards' onClick={() => setOverlay(false)}>
+								<a href='/#awards' onClick={() => setOverlay(false)}>
 									Awards
 								</a>
 							</li>
 							<li className='p__opensans'>
-								<a href='#contact' onClick={() => setOverlay(false)}>
+								<a href='/#contact' onClick={() => setOverlay(false)}>
 									Contact
 								</a>
 							</li>
