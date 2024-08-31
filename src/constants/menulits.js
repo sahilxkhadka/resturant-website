@@ -76,19 +76,14 @@ export const menuItems = {
 			// tags: "AU | Bottle",
 		},
 		{
-			title: "Chicken Sekuwa (1kg)",
+			title: "Chicken Sekuwa",
 			price: "Rs 900",
 			// tags: "FR | 750 ml",
 		},
 		{
 			title: "Buff Sekuwa (1kg)",
-			price: "$31",
+			price: "Rs 900",
 			// tags: "CA | 750 ml",
-		},
-		{
-			title: "Mutton Sekuwa (1kg)",
-			price: "Rs 1800",
-			// tags: "IE | 750 ml",
 		},
 		{
 			title: "Mutton Sekuwa (1kg)",
@@ -107,7 +102,7 @@ export const menuItems = {
 		},
 		{
 			title: "Bhatmas/Peanuts Sandeko",
-			price: "Rs 1800",
+			price: "Rs 190",
 			// tags: "IE | 750 ml",
 		},
 		{
@@ -156,7 +151,7 @@ export const menuItems = {
 			// tags: "IE | 750 ml",
 		},
 		{
-			title: "Mustang Aalo 250",
+			title: "Mustang Aalo",
 			price: "Rs 250",
 			// tags: "IE | 750 ml",
 		},
