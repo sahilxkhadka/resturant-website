@@ -1,16 +1,19 @@
 import React from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { ImCross } from "react-icons/im";
 
 import logo from "../../assets/logo.png";
 import "./Navbar.css";
+import { useState } from "react";
 
 const Navbar = () => {
-	// const [overlay, setOverlay] = useState(false);
+	const [overlay, setOverlay] = useState(false);
 	return (
 		<nav className='app__navbar'>
 			<div className='app__navbar-logo'>
 				<img src={logo} alt='app logo' />
 			</div>
-			{/* <ul className='app__navbar-links'>
+			<ul className='app__navbar-links'>
 				<li className='p__opensans'>
 					<a href='/#home'>Home</a>
 				</li>
@@ -31,6 +34,8 @@ const Navbar = () => {
 				<a href='#login' className='p__opensans'>
 					Login / Register
 				</a>
+				{/* <div /> */}
+				{/* <a href='/' className='p__opensans'>Book Table</a> */}
 			</div>
 			<div className='app__navbar-smallscreen'>
 				<GiHamburgerMenu
@@ -75,7 +80,7 @@ const Navbar = () => {
 						</ul>
 					</div>
 				)}
-			</div> */}
+			</div>
 		</nav>
 	);
 };

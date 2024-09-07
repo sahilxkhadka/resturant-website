@@ -2,15 +2,16 @@ import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import "./App.css";
-import CategoryList from "./CategoryList";
+import Home from "./Home";
 import MenuList from "./MenuList";
+import CategoryList from "./CategoryList";
 
 const App = () => (
 	<Router>
 		<Routes>
-			{/* <Route path='/' element={<Home />} /> */}
-			<Route path='/' element={<MenuList />} />
-			<Route path='/:category' element={<CategoryList />} />
+			<Route path='/' element={<Home />} />
+			<Route path='/menu-list' element={<MenuList />} />
+			<Route path='/menu-list/:category' element={<CategoryList />} />
 		</Routes>
 	</Router>
 );
